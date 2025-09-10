@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <style>
+    body {
+      background-color: aqua;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      background-color: peachpuff;
+      border-radius: 10px;
+    }
+    h3 {
+      color: red;
+    }
+    input, select, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h3>Personal Details</h3>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <label for="email">E-mail ID:</label>
+    <input type="email" id="email" name="email">
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male" style="display:inline;">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female" style="display:inline;">Female</label>
+
+    <label for="mobile">Contact#:</label>
+    <input type="text" id="mobile" name="mobile">
+
+    <h3>Educational Qualification</h3>
+
+    <label for="degree">Degree:</label>
+    <select id="degree" name="degree">
+      <option value="">-- Select Degree --</option>
+      <option value="bcom">B.Com</option>
+      <option value="bsc">B.Sc</option>
+      <option value="bcom-computers">B.Com Computers</option>
+      <option value="ba">B.A</option>
+    </select>
+
+    <label for="eng">Engineering:</label>
+    <select id="eng" name="eng">
+      <option value="">-- Select Group --</option>
+      <option value="cse">CSE</option>
+      <option value="ece">ECE</option>
+      <option value="civil">CIVIL</option>
+      <option value="eee">EEE</option>
+    </select>
+
+    <label>Hobbies:</label>
+    <input type="checkbox" id="chess" name="hobbies" value="chess">
+    <label for="chess" style="display:inline;">Playing Chess</label><br>
+    <input type="checkbox" id="books" name="hobbies" value="books">
+    <label for="books" style="display:inline;">Reading Books</label>
+
+    <h3>Address</h3>
+    <textarea id="address" name="address" rows="4" placeholder="Enter your address here"></textarea>
+
+    <label for="resume">Attach Resume:</label>
+    <input type="file" id="resume" name="resume">
+
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
